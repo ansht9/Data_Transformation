@@ -31,7 +31,7 @@ Click the "Run" button on the web page to see the JavaScript functionality in ac
 Contributing
 
 
-Your Name - your-email@example.com
+Ansh Tiwari - your-atiwar31@asu.edu
 
 Project Link: https://github.com/your-username/simple-html-css-js-project
 
