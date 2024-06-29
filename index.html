@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+<!-- Include CodeMirror -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Include CodeMirror and Prettify JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/sql/sql.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- <div class="nav">
+    
+  </div> -->
+  <div class="bottom">
+    <div class="bottom-left">
+
+        <div class="chat-container">
+            <div id="chatbox" class="chatbox">
+                <!-- Messages will be displayed here -->
+            </div>
+            <button id="sendBtn">Transform</button>
+        </div>
+
+        <div id="sourceFileInfo" class="file-info"></div>
+        <div id="targetFileInfo" class="file-info"></div>
+
+    </div>
+    
+    <div class="bottom-right">
+      
+        <details class="upload">
+            <summary>File Upload</summary>
+            <div class="upload-section1">
+              <input type="file" id="sourceFileInput" accept=".csv" onchange="handleFileUpload('sourceFileInput', 'sourceFileList')" style="display: none;">
+              <label for="sourceFileInput" style="background-color: #007bff; border-radius: 10px; color: #fff; padding: 12px 16px; cursor: pointer;">📁 Choose Source File</label>
+              <ul id="sourceFileList"></ul>
+            </div>
+          
+            <div class="upload-section">
+              <input type="file" id="targetFileInput" accept=".csv" onchange="handleFileUpload('targetFileInput', 'targetFileList')" style="display: none;">
+              <label for="targetFileInput" style="background-color: #007bff; border-radius: 10px; color: #fff; padding: 12px 16px; cursor: pointer;">📁 Choose Sample Target File</label>
+              <ul id="targetFileList"></ul>
+              <!-- "background-color: #28a745; -->
+            </div>
+          </details>
+          
+          <!-- Modal -->
+          <div id="csvModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="modalCsvContent"></div>
+            </div>
+          </div>
+          
+          <details class="upload2">
+            <summary>Transform</summary>
+            <!-- <div class="transform"> -->
+                <!-- <h3>Transformation Results</h3> -->
+                <button class="button-3" id="showDataButton">Show SQL Code and CSV Data</button>
+                <!-- <p>Generated Code</p> -->
+                <details>
+                    <summary>Generated Code</summary>
+                    <pre id="sqlContainer" class="sql"></pre>
+                </details>
+                <!-- <div id="sqlContainer"></div> -->
+                 <!-- <p>Transformed Data</p> -->
+                 <details class="csvContainerr">
+                    <summary>Transformed Data</summary>
+                    <div id="csvContainer"></div>
+                 </details>
+                
+              <!-- </div> -->
+          </details>
+      
+    </div>
+    
+  </div>
+  <script src="script.js">
+    // Initialize CodeMirror on your pre block with SQL mode
+    var editor = CodeMirror.fromTextArea(document.getElementById("sqlContainer"), {
+        lineNumbers: true,
+        mode: "text/x-sql",
+        readOnly: true, // Optional: If you want the code to be read-only
+    });
+    
+    // Run Prettify on the pre block to apply syntax highlighting
+    PR.prettyPrint();
+    
+    // Optional: Refresh CodeMirror after Prettify to update any changes
+    editor.refresh();
+    </script>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
+
