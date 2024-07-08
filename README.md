@@ -31,8 +31,6 @@ Click the "Run" button on the web page to see the JavaScript functionality in ac
 Contributing
 
 
-Ansh Tiwari - your-atiwar31@asu.edu
+Ansh Tiwari - atiwar31@asu.edu
 
-Project Link: https://github.com/your-username/simple-html-css-js-project
-
-Feel free to replace placeholders with your actual information. Let me know if you need any modifications or additional sections!
+Project Link: https://github.com/ansht9/Data_Transformation
