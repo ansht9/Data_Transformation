@@ -211,10 +211,7 @@ COPY (
             csvContainer.innerHTML = ''; // Clear any existing content
             csvContainer.appendChild(table);
         }
-        
-          
-          streamSQLCode(0);
-  
+
         // Start streaming SQL code
         streamSQLCode(0);
       });
