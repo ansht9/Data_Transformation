@@ -1,4 +1,4 @@
-Simple UI if SQL Morpher HTML, CSS, and JavaScript Project
+Simple UI of SQL Morpher HTML, CSS, and JavaScript Project
 
 This is a simple project demonstrating the use of HTML, CSS, and JavaScript. The project includes basic functionalities that can be executed by simply clicking a "Run" button.
 
