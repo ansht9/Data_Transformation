@@ -195,9 +195,6 @@ print("Transformation complete. Data saved to 'Case4_Labs_Dec_Result.csv'.")
             csvContainer.innerHTML = ''; // Clear any existing content
             csvContainer.appendChild(table);
         }
-        
-          
-          streamSQLCode(0);
   
         // Start streaming SQL code
         streamSQLCode(0);
